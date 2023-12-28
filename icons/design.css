@@ -1,0 +1,291 @@
+/* A small stylesheet made by TPXP */
+/*    Don't steal it, please !     */
+@charset "utf-8";
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+	background: #ccc;
+	/* For IE */
+	background: radial-gradient(ellipse at top left, #eee, #aaa) fixed;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* Index of ... */
+h1 {
+	color: #F79D28;
+	display: block;
+	text-shadow: 0 0 5px white;
+	word-wrap: break-word;
+}
+
+/* Links ! */
+a {
+	color: #5050B0;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #252585;
+}
+
+/* Bringing some order into the style... */
+table {
+	display: inline-block;
+	text-align: left;
+	position: relative;
+	white-space: nowrap;
+	padding: 5px;
+}
+
+table td {
+	padding: 5px;
+}
+
+table th {
+	text-align: center;
+	padding: 5px 5px 15px;
+}
+
+table td:first-child {
+	padding-right: 25px;
+}
+
+table td:nth-child(n+2) {
+	text-align: center;
+}
+
+/* Icons */
+table td a:before {
+	display: inline-block;
+	vertical-align: middle;
+	height: 22px;
+	width: 22px;
+	background: url('unknown.png');
+	/* By default, unknown icon */
+	content: '';
+	margin-right: 7px;
+}
+
+table td a[href$="/"]:before {
+	/* Folder */
+	background: url('folder.png');
+}
+
+table td a[href^="../"]:before {
+	/* Parent Directory */
+	background: url('back.png');
+}
+
+table td a[href$=".jpg"]:before,
+table td a[href$=".jpeg"]:before,
+table td a[href$=".JPG"]:before,
+table td a[href$=".JPEG"]:before,
+table td a[href$=".tiff"]:before,
+table td a[href$=".tif"]:before,
+table td a[href$=".pict"]:before,
+table td a[href$=".pct"]:before,
+table td a[href$=".bmp"]:before,
+table td a[href$=".gif"]:before,
+table td a[href$=".png"]:before,
+table td a[href$=".psd"]:before,
+table td a[href$=".ai"]:before,
+table td a[href$=".xcf"]:before,
+table td a[href$=".svg"]:before {
+	/* Image */
+	background: url('image.png');
+}
+
+table td a[href$=".mov"]:before,
+table td a[href$=".mpg"]:before,
+table td a[href$=".mpeg"]:before,
+table td a[href$=".avi"]:before,
+table td a[href$=".divx"]:before,
+table td a[href$=".xvid"]:before,
+table td a[href$=".wmv"]:before,
+table td a[href$=".mkv"]:before,
+table td a[href$=".mp4"]:before {
+	/* Video */
+	background: url('movie.png');
+}
+
+table td a[href$=".txt"]:before,
+table td a[href$=".leg"]:before,
+table td a[href$=".log"]:before {
+	/* Text */
+	background: url('txt.png');
+}
+
+table td a[href$=".htm"]:before,
+table td a[href$=".html"]:before,
+table td a[href$=".xml"]:before,
+table td a[href$=".shtml"]:before,
+table td a[href$=".xhtml"]:before {
+	/* HTML */
+	background: url('html.png');
+}
+
+table td a[href$=".odt"]:before,
+table td a[href$=".rtf"]:before,
+table td a[href$=".doc"]:before,
+table td a[href$=".ps"]:before,
+table td a[href$=".pdf"]:before,
+table td a[href$=".docx"]:before {
+	/* Text documents */
+	background: url('odt.png');
+}
+
+table td a[href$=".ods"]:before,
+table td a[href$=".xls"]:before,
+table td a[href$=".xlsx"]:before {
+	/* Calc sheets */
+	background: url('ods.png');
+}
+
+table td a[href$=".odp"]:before,
+table td a[href$=".ppt"]:before,
+table td a[href$=".pps"]:before,
+table td a[href$=".pptx"]:before,
+table td a[href$=".ppsx"]:before {
+	/* Presentations */
+	background: url('odp.png');
+}
+
+table td a[href$=".zip"]:before,
+table td a[href$=".tar"]:before,
+table td a[href$=".rar"]:before,
+table td a[href$=".gz"]:before,
+table td a[href$=".xz"]:before,
+table td a[href$=".tgz"]:before,
+table td a[href$=".7z"]:before {
+	/* Archives */
+	background: url('archive.png');
+}
+
+table td a[href$=".mp3"]:before,
+table td a[href$=".wav"]:before,
+table td a[href$=".flac"]:before,
+table td a[href$=".alac"]:before,
+table td a[href$=".midi"]:before,
+table td a[href$=".ogg"]:before {
+	/* Sound */
+	background: url('sound.png');
+}
+
+table td a[href$=".dmg"]:before,
+table td a[href$=".iso"]:before,
+table td a[href$=".img"]:before {
+	/* Disc Images */
+	background: url('iso.png');
+}
+
+table td a[href$=".pkg"]:before,
+table td a[href$=".deb"]:before,
+table td a[href$=".rpm"]:before {
+	/* Packages */
+	background: url('package.png');
+}
+
+table td a[href$=".nfo"]:before,
+table td a[href$=".info"]:before,
+table td a[href$="README"]:before {
+	/* Informations */
+	background: url('info.png');
+}
+
+table td a[href$=".php"]:before {
+	/* PHP */
+	background: url('php.png');
+}
+
+table td a[href$=".jar"]:before,
+table td a[href$=".java"]:before {
+	/* Java */
+	background: url('java.png');
+}
+
+table td a[href$=".sh"]:before,
+table td a[href$=".js"]:before,
+table td a[href$=".bat"]:before,
+table td a[href$=".css"]:before {
+	/* Script */
+	background: url('script.png');
+}
+
+table td a[href$=".py"]:before,
+table td a[href$=".python"]:before {
+	/* Python */
+	background: url('python.png');
+}
+
+table td a[href$=".ruby"]:before,
+table td a[href$=".rb"]:before {
+	/* Ruby */
+	background: url('ruby.png');
+}
+
+table td a[href$=".exe"]:before,
+table td a[href$=".bin"]:before {
+	/* Binary */
+	background: url('system.png');
+}
+
+hr {
+	display: block;
+	position: relative;
+	margin: 8px 0 9px;
+	width: 100%;
+	height: 1px;
+	border: 0 none;
+	background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent);
+}
+
+hr:after {
+	content: '';
+	width: 100%;
+	position: absolute;
+	top: 1px;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	display: block;
+	height: 1px;
+}
+
+/* The address at the bottom */
+body>i:last-child {
+	padding-top: 20px;
+	display: block;
+	text-align: right;
+	color: #444;
+}
+
+/* Gallery */
+#gallery {
+	display: block;
+	text-align: center;
+	width: 80%;
+	margin: 20px auto;
+}
+
+#gallery progress {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+#gallery span {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	display: inline-block;
+	margin: 5px;
+}
+
+#gallery img {
+	max-height: 100px;
+	max-width: 100px;
+	vertical-align: middle;
+	border: 1px solid #717171;
+	border-radius: 3px;
+}
