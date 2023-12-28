@@ -2,10 +2,9 @@
 
 A small and simple project adding some style to your nginx directory listings, with Tango icons and an image gallery.
 
-<div style="text-align:center">
-  <a href="./screenshot_1.png"><img src="./screenshot_1.png" style="max-width:49%;max-height:50vh;border-radius:4px" alt="Directory listing with images" /></a>
-  <a href="./screenshot_2.png"><img src="./screenshot_2.png" style="max-width:49%;max-height:50vh;border-radius:4px" alt="Directory listing with files of various types" /></a>
-</div>
+|![](./screenshot_1.png)|![](/screenshot_2.png) |
+|-----|-----|
+
 
 This was initially used on my hobby server, I'm publishing it in the hope that it will be useful to someone but you're probably better off with [h5ai](https://github.com/lrsjng/h5ai) - it has more features and is widely adopted.
 
